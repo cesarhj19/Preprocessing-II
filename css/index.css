@@ -183,6 +183,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .container {
+    max-width: 80rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 500px) {
   .container {
     max-width: 45rem;
@@ -217,6 +224,14 @@ nav .container-nav ul li a {
   font-size: 1.3rem;
   text-decoration: none;
   color: #212529;
+}
+@media (max-width: 800px) {
+  nav .container-nav {
+    width: auto;
+  }
+  nav .container-nav .container-nav-logo .nav-logo {
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 500px) {
   nav {
@@ -319,6 +334,36 @@ nav .container-nav ul li a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .home .content-section {
+    flex-flow: column;
+    width: 100%;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+  .home .inverse-content {
+    flex-flow: column-reverse;
+  }
+  .home .content-destination {
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-bottom: 3.4rem;
+  }
+  .home .content-destination img {
+    display: block;
+    margin: auto;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section {
